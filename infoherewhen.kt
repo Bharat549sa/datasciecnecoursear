@@ -52,3 +52,15 @@ fun main() {
     println(value is Boolean) // false
     println(value is Any) // true
 }
+//typecheck here
+//Type-check can also be used as a branch in a when statement with a value. 
+
+fun main() {
+val something: Any = "ABC" // or 123, 0.1, true
+    when (something) {
+        is String -> println("This is String")
+        is Int -> println("This is Int")
+        is Double -> println("This is Double")
+        is Boolean -> println("This is Boolean")
+    }
+    println(text)
